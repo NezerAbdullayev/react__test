@@ -1,4 +1,4 @@
-function Header() {
+function ShopPage() {
     return (
         <div>
             
@@ -6,4 +6,4 @@ function Header() {
     )
 }
 
-export default Header
+export default ShopPage
