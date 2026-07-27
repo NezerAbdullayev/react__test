@@ -1,4 +1,4 @@
-function MyBasketBtn() {
+function MyPersonBtn() {
   return (
     <div className="d-flex">
       <i className="bi bi-person-circle fs-1"></i>
@@ -6,4 +6,4 @@ function MyBasketBtn() {
   );
 }
 
-export default MyBasketBtn;
+export default MyPersonBtn;
