@@ -4,9 +4,24 @@ import Img3 from "../assets/image 3.svg";
 import Img4 from "../assets/image 4.png";
 import Img5 from "../assets/image 5.png";
 import Img6 from "../assets/image 6.svg";
+import Cart from "../components/Cart";
 
 function CardSection() {
-  return <div></div>;
+  return (
+    <div>
+      <div
+        className="d-grid gap-5 container"
+        style={{
+          gridTemplateColumns: "repeat(auto-fill, 200px)",
+          justifyContent: "center",
+        }}
+      >
+        {data.map((itm) => (
+          <Cart key={itm.id} {...itm} />
+        ))}
+      </div>
+    </div>
+  );
 }
 
 export default CardSection;
