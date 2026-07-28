@@ -5,16 +5,16 @@ function Cart({ img, name, price }) {
   return (
     <div name={name} className="card rounded-4">
       <div className="m-1">
-        <div className="d-flex justify-content-start my-2 ">
-          <img className="card-img-top w-auto" src={img} />
-        </div>
+        <img
+          className="card-img-top w-auto mx-auto d-block"
+          style={{ height: "70px" }}
+          src={img}
+        />
 
         <div className="card-body">
-          <h5 className="card-title">{name}uyuy</h5>
-          <p className="card-text">{price}</p>
-          <a href="#" className="btn btn-primary">
-            Go somewhere
-          </a>
+          <h5 className="card-title text-center">{name}</h5>
+          <p className="card-text">${price}</p>
+          <button className="btn btn-primary">Buy product</button>
         </div>
       </div>
     </div>
